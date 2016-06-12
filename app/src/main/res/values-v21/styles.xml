@@ -32,7 +32,7 @@
 		<item name="@android:textColor">@color/group</item>
 		<item name="@android:textSize">15sp</item>
 	</style>
-	<style name="GroupText" parent="android:Theme.Material">
+	<style name="GroupText">
 		<item name="@android:textColor">@color/group</item>
 		<item name="@android:textSize">20sp</item>
 	</style>
@@ -54,8 +54,6 @@
 	</style>
 	<style name="WhiteOnBlack">
 		<!-- <item name="@android:background">#666666</item> -->
-		<item 
-name="@android:textColor">@android:color/primary_text_dark</item>
 		<item name="@android:textSize">20sp</item>
 	</style>
 	<style name="WhiteOnBlackSmall" parent="WhiteOnBlack">

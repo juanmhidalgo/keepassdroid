@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2009-2015 Brian Pellin.
+     
+ This file is part of KeePassDroid.
+
+  KeePassDroid is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 2 of the License, or
+  (at your option) any later version.
+
+  KeePassDroid is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with KeePassDroid.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entry_table"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/keyline_1"
+    android:paddingStart="@dimen/keyline_1">
+    <!-- Username -->
+    <TextView
+        android:id="@+id/entry_user_name_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_user_name" />
+
+    <TextView
+        android:id="@+id/entry_user_name"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true" />
+
+    <View style="@style/Divider" />
+    <!--  URL -->
+    <TextView
+        android:id="@+id/entry_url_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_url" />
+
+    <TextView
+        android:id="@+id/entry_url"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:textIsSelectable="true" />
+
+    <View style="@style/Divider" />
+    <!-- Password -->
+    <TextView
+        android:id="@+id/entry_password_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_password" />
+
+    <com.keepassdroid.view.PasswordTextViewSelect
+        android:id="@+id/entry_password"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:textIsSelectable="true"
+        android:typeface="monospace" />
+
+    <View style="@style/Divider" />
+    <!-- Comment -->
+    <TextView
+        android:id="@+id/entry_comment_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_comment" />
+
+    <TextView
+        android:id="@+id/entry_comment"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true" />
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:id="@+id/extra_strings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+    <!-- Created -->
+    <TextView
+        android:id="@+id/entry_created_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_created" />
+
+    <TextView
+        android:id="@+id/entry_created"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/Divider" />
+    <!-- Modified -->
+    <TextView
+        android:id="@+id/entry_modified_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_modified" />
+
+    <TextView
+        android:id="@+id/entry_modified"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/Divider" />
+    <!-- Accessed -->
+    <TextView
+        android:id="@+id/entry_accessed_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_accessed" />
+
+    <TextView
+        android:id="@+id/entry_accessed"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/Divider" />
+    <!-- Expires -->
+    <TextView
+        android:id="@+id/entry_expires_label"
+        style="@style/EntryItemLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/entry_expires" />
+
+    <TextView
+        android:id="@+id/entry_expires"
+        style="@style/EntryItemValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

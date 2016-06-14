@@ -52,7 +52,7 @@
 	<style name="GroupLabel">
 		<item name="@android:textSize">20sp</item>
 	</style>
-	<style name="WhiteOnBlack">
+	<style name="WhiteOnBlack" parent="android:TextAppearance.Material.Body1">
 		<!-- <item name="@android:background">#666666</item> -->
 		<item name="@android:textSize">20sp</item>
 	</style>
@@ -69,4 +69,17 @@
 	<style name="EntryItem">
 		<item name="@android:padding">5sp</item>
 	</style>
+
+	<style name="caption" parent="android:TextAppearance.Material.Caption"/>
+	<style name="body_1" parent="android:TextAppearance.Material.Body1"/>
+
+	<style name="EntryItemLabel" parent="android:TextAppearance.Material.Subhead">
+		<item name="android:layout_marginTop">@dimen/keyline_1_minus_12</item>
+	</style>
+	<style name="EntryItemValue" parent="android:TextAppearance.Material.Body1">
+		<item name="android:layout_marginBottom">@dimen/keyline_1_minus_12</item>
+		<item name="android:fontFamily">sans-serif-light</item>
+	</style>
+
+	<dimen name="keyline_1_minus_12">4dp</dimen>
 </resources>
